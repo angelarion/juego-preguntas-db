@@ -23,7 +23,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: rootpassword
         - name: MYSQL_DATABASE
-          value: my_database
+          value: bd_quiz
         - name: MYSQL_USER
           value: user
         - name: MYSQL_PASSWORD
