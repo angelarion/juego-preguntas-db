@@ -3,7 +3,7 @@ FROM mysql:8.0
 
 # Establecer las variables de entorno para MySQL
 #ENV MYSQL_ROOT_PASSWORD=rootpassword
-#ENV MYSQL_DATABASE=my_database
+#ENV MYSQL_DATABASE=bd_quiz
 #ENV MYSQL_USER=user
 #ENV MYSQL_PASSWORD=userpassword
 
