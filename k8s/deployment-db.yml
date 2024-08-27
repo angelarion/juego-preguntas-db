@@ -24,14 +24,15 @@ spec:
           value: rootpassword
         - name: MYSQL_DATABASE
           value: bd_quiz
-        - name: MYSQL_USER
-          value: user
-        - name: MYSQL_PASSWORD
-          value: userpassword
         volumeMounts:
         - name: mysql-persistent-storage
           mountPath: /var/lib/mysql
+        - name: mysql-init-db
+          mountPath: /docker-entrypoint-initdb.d
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pvc
+      - name: mysql-init-db
+        configMap:
+          name: mysql-init-db
