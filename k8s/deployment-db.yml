@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mysql-container
-        image: image-registry.openshift-image-registry.svc:5000/demo2-aysa/juego-preguntas
+        image: image-registry.openshift-image-registry.svc:5000/demo1-mtp/app-juego-db
         ports:
         - containerPort: 3306
         env:
