@@ -1,6 +1,10 @@
+TENER EN CUENTA !!!!!!!!!!!!!!
+
+Hay que cambiar el nombre del namespace que el deployment tiene dentro del archivo k8s ,
+
+
 git-url = https://github.com/angelarion/juego-preguntas-db.git
 IMAGE = image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/app-juego-db
 deployment-name = image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/app-juego-db
-
 
 Workspaces: shared-workspace
